@@ -8,11 +8,10 @@ export const Card = ({ item, img, logo, name }) => {
 
     const like = (item) => {
         addLike(item)
+        setIsLiked(!isLiked);
     }
 
-    const handleLikeClick = () => {
-        setIsLiked(!isLiked);
-    };
+    
     return (
         <div>
             <img src={img} alt="imag" />
