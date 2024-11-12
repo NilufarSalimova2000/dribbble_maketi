@@ -35,7 +35,7 @@ export const Home = () => {
                         {isLoading ? (
                             <h2>Loading...</h2>
                         ) : (
-                            data?.map((item) => <Card key={item.id} img={item.img} logo={item.logo} name={item.name} />)
+                            data?.map((item) => <Card key={item.id} item={item} id={item.id} img={item.img} logo={item.logo} name={item.name} />)
                         )}
                     </div>
                 </div>
